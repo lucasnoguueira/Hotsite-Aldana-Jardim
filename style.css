@@ -1,49 +1,78 @@
 @font-face {
     font-family: Quiche;
-    src: url(./src/fonts/Quiche\ Display\ Regular/QuicheDisplayRegular.otf);
+    src: url(https://dev.residencialaldanajardim.com.br/wp-content/themes/mainTheme/src/fonts/QuicheDisplayRegular.otf);
 }
 
 * {
     font-family: 'Montserrat', sans-serif;
 }
 
+.text-align-center {
+    text-align: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+
 #main-center {
     background-color: #EEE7DC;
-    z-index: 999;
+}
+
+.collapse1:not(.show) {
+    display: none;
 }
 
 #main-left {
-    background: url(./src/img/foto_sbc.jpg) center no-repeat;
+    background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/foto_sbc-scaled.jpg) center no-repeat;
     background-size: cover;
 }
 
 #main-right {
-    background: url(./src/img/bg_verde.png) center no-repeat;
+    background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_verde.png) center no-repeat;
     background-size: cover;
     z-index: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+#main-right>img {
+    margin-left: -4.15vw;
+}
+
+.bg-x>img {
+    margin-top: -3.8vw;
 }
 
 #mainRow {
     min-height: 110vh;
 }
 
-.navbar {
-    float: right;
-    gap: 15rem;
-}
-
-.navbar-nav {
-    margin-right: -285px;
-}
-
-#menuItem4, #menuItem5, #menuItem6 {
-    color: white;
+.nav-item {
+    font-size: 18px;
 }
 
 #mc2 {
     display: flex;
     justify-content: center;
-    margin-top: 215px;
+    margin-top: 2rem;
+    gap: 10rem;
+}
+
+#espec1>div>h5, #espec2>div>h5 {
+    font-size: 23px;
+    color: #9C4F2F;
+}
+
+#espec1>div>h6, #espec2>div>h6 {
+    font-size: 16px;
+    color: #9C4F2F;
+}
+
+#espec2 {
+    margin-top: 1rem;
 }
 
 #mc2>section>h3 {
@@ -80,11 +109,10 @@
 
 #fachadaSection>img {
     width: 27vw;
-    margin-left: 230px;
 }
 
 #orangeBar>.row {
-    background: url(./src/img/bg_salmao.png);
+    background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_salmao.png);
 }
 
 #orangeBar {
@@ -102,6 +130,8 @@
     color: #3B4C38;
     font-size: 24px;
     font-family: Quiche, sans-serif;
+    text-align: center;
+    opacity: 1;
 }
 
 #mc4Img>img {
@@ -118,7 +148,7 @@
 }
 
 #sc2Left {
-    background: url(./src/img/bg_madeira.jpg) center no-repeat;
+    background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_madeira-scaled.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -134,6 +164,7 @@
     font-family: Quiche, sans-serif;
     font-size: 26px;
     color: #3B4C38;
+    text-align: end;
 }
 
 .pl-5 {
@@ -149,7 +180,7 @@
 }
 
 .bg-4 {
-    background: url(./src/img/bg_salmao.png) no-repeat;
+    background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_salmao.png) no-repeat;
     background-size: cover;
 }
 
@@ -175,7 +206,7 @@
 }
 
 .img-circle {
-    width: 250px;
+    width: 196px;
 }
 
 .rd {
@@ -186,32 +217,54 @@
     text-align: center;
 }
 
-.bg-5 {
-    background: url(./src/img/mulher_pet.jpg) no-repeat;
-    background-size: cover;
+#section5 {
+    background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_verde.png) center no-repeat;
+    height: 30px;
 }
 
-.bg-6 {
-    background: url(./src/img/bg_verde.png) no-repeat;
-    background-size: cover;
-    color: white;
-    padding: 2rem;
+#section6{
+    padding-top: 2rem;
+    background-color: #EEE7DC;
 }
 
-.bg-6>.row>h3{
+#section7Main {
+    background-color: #EEE7DC;
+}
+
+#section6>h3 {
+    color: #9C4F2F;
+    font-size: 25px;
     font-family: Quiche, sans-serif;
 }
 
-.bg-6Text {
-    font-size: 18px;
+#section6>h2 {
+    color: #9C4F2F;
+    font-size: 25px;
+    font-family: Quiche, sans-serif;
+    font-weight: bolder;
 }
 
+.diferenciais {
+    text-align: start;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+#diferenciaisImg>div {
+    padding: 0;
+}
+
+.diferenciais>li {
+    font-size: 17px;
+}
+
+
 .bg-7 {
-    background: url(./src/img/bg_salmao.png) no-repeat;
+    background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_salmao.png) no-repeat;
     background-size: cover;
     color: white;
     padding: 4rem;
-    width: 20%;
+    width: 25%;
 }
 
 .bg-7>h3 {
@@ -224,14 +277,14 @@
 }
 
 .bg-8 {
-    background: url(./src/img/mulher_crianca.jpg) no-repeat;
+    background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/mulher_crianca-scaled.jpg) no-repeat;
     background-size: cover;
-    width: 30%;
+    width: 25%;
 }
 
 .bg-9 {
     padding: 4rem;
-    width: 20%;
+    width: 25%;
     color: #41523E;
 }
 
@@ -245,16 +298,14 @@
 }
 
 .bg-10 {
-    background: url(./src/img/maos.jpg) no-repeat;
+    background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/maos.jpg) no-repeat;
     background-size: cover;
-    width: 30%;
+    width: 25%;
 }
 
 .bg-11 {
     background-color: #EEE7DC;
     color: #41523E;
-    padding: 3rem;
-    text-align: center;
 }
 
 .bg-11>h3 {
@@ -268,7 +319,7 @@
 }
 
 .bg-12 {
-    background: url(./src/img/bg_verde.png) no-repeat;
+    background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_verde.png) no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -283,7 +334,7 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 3rem;
-    color: white;
+	color: #3B4C38;
 }
 
 .list-none>li>img {
@@ -291,19 +342,20 @@
 }
 
 .imgPlantas {
-    padding-bottom: 2rem;
+	padding-bottom:2rem;
 }
 
 .bg-13 {
-    background: url(./src/img/bg_verde.png) no-repeat;
-    background-size: cover;
-    color: white;
+    background-color: #EEE7DD;
+    color: #3B4C38;
     padding: 5rem;
+    align-self: center;
 }
 
 .bg-13>.container>ul>li {
     font-size: 18px;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 .bg-14 {
@@ -339,7 +391,7 @@
 }
 
 .img-fluid {
-    width: 50%;
+    width: 25%;
     place-self: center;
 }
 
@@ -386,13 +438,74 @@ footer {
 .carousel-caption>h5 {
 	text-align: right;
 	font-size: 30px;
-	margin-bottom: -25px;
+	background:url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_salmao.png) no-repeat;
+	background-size: cover;
+	margin-left: -194px;
+    margin-right: -195px;
+    padding-right: 226px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: unset;
+    transition: none;
+    top: unset;
+    bottom: 50px;
 }
 
 .time-text {
 	color:#9C4F2F;
 	margin-top: 5px;
 }
+
+.bg-x {
+    background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_verde.png) center no-repeat;
+    height: 25px;
+}
+
+.bg-y {
+    background-color: #9C4F2F;
+    height: 25px;
+}
+
+.bg-14>div>h2 {
+    font-size: 39px;
+    font-weight: bold;
+    color: #3B4C38;
+}
+
+#section8 {
+    background-color: #EEE7DC;
+}
+
+#orangeBarHeader>p {
+    background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_salmao.png) center no-repeat;
+    background-size: cover;
+}
+
+#orangeBarHeader>p {
+    margin-bottom: unset;
+    margin-top: unset;
+    text-align: end;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#menuSuperior {
+    background-color: transparent;
+    margin-bottom: -22px;
+    z-index: 9999;
+    position: fixed;
+	width:100%;
+}
+
+#videoSection {
+    background-color: #EEE7DC;
+}
+
+#orangeBarHeader>p {
+        text-align:center;
+    }
 
 /* RESPONSIVO */
 
@@ -407,8 +520,7 @@ footer {
     }
     
     .navbar {
-        float: unset;
-        gap: unset;
+        margin-left: unset;
     }
 
     #section2 {
@@ -430,12 +542,16 @@ footer {
     }
 
     #section2Mobile>.row {
-        background: url(./src/img/bg_salmao.png) no-repeat;
+        background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_salmao.png) no-repeat;
         background-size: cover;
         margin-left: unset;
         margin-right: unset;
         padding-top: 1rem;
     }
+	
+	.carousel-caption>h5 {
+		font-size:20px;
+	}
 
     .sm1>h5 {
         color: white;
@@ -464,7 +580,7 @@ footer {
     }
 
     #sc3ColMobile {
-        background: url(./src/img/bg_salmao.png) no-repeat;
+        background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_salmao.png) no-repeat;
         background-size: cover;
     }
 
@@ -486,18 +602,6 @@ footer {
         margin-right: 1rem;
     }
 
-    .bg-5 {
-        display: none;
-    }
-
-    .bg-6>.row>h3 {
-        font-size: 20px;
-    }
-
-    .bg-6Text>p {
-        font-size: 16px;
-    }
-
     .bg-7,.bg-8,.bg-9,.bg-10 {
         width: 100%;
     }
@@ -509,10 +613,19 @@ footer {
     .bg-16 {
         background-color: #9C4F2F;
     }
-
-    #section7 {
-        display: none;
-    }
+	
+	.bg-12 {
+		display: none;
+	}
+	
+	.list-none {
+		margin-top: unset;
+	}
+	
+	.bg-12>.row>.col-md-6 {
+		display: flex;
+    justify-content: center;
+	}
 
     .imgPlantas {
         width: 420px!important;
@@ -522,6 +635,55 @@ footer {
     iframe {
         height: 400px!important;
     }
+
+    .bg-11m {
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+
+    .bg-11ma {
+        display: flex;
+        justify-content: center;
+    }
+
+    .diferenciais {
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+
+    .tabDif {
+        margin-bottom: 5rem;
+    }
+
+    #pills-supermercado-tab {
+        font-size: 15px;
+    }
+
+    .bg-13 {
+        padding: 1.5rem;
+    }
+
+    .d-none-mb {
+        display: none;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        bottom: 45px;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 1.5rem;
+    }
+	
+	.bg-11>h3 {
+		padding-left: 15px;
+    padding-right: 15px;
+	}
+	
+	.img-fluid {
+		width: 50%;
+	}
+
 }
 
 @media (min-width:577px) and (max-width:768px) {
@@ -534,8 +696,7 @@ footer {
     }
     
     .navbar {
-        float: unset;
-        gap: unset;
+        margin-left: unset;
     }
 
     #section2 {
@@ -557,7 +718,7 @@ footer {
     }
 
     #section2Mobile>.row {
-        background: url(./src/img/bg_salmao.png) no-repeat;
+        background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_salmao.png) no-repeat;
         background-size: cover;
         margin-left: unset;
         margin-right: unset;
@@ -591,7 +752,7 @@ footer {
     }
 
     #sc3ColMobile {
-        background: url(./src/img/bg_salmao.png) no-repeat;
+        background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_salmao.png) no-repeat;
         background-size: cover;
     }
 
@@ -613,18 +774,6 @@ footer {
         margin-right: 1rem;
     }
 
-    .bg-5 {
-        display: none;
-    }
-
-    .bg-6>.row>h3 {
-        font-size: 20px;
-    }
-
-    .bg-6Text>p {
-        font-size: 16px;
-    }
-
     .bg-7,.bg-8,.bg-9,.bg-10 {
         width: 100%;
     }
@@ -636,10 +785,10 @@ footer {
     .bg-16 {
         background-color: #9C4F2F;
     }
-
-    #section7 {
-        display: none;
-    }
+	
+	.list-none {
+		margin-top: unset;
+	}
 
     .imgPlantas {
         width: 420px!important;
@@ -649,6 +798,44 @@ footer {
     iframe {
         height: 400px!important;
     }
+
+    .d-none-mb {
+        display: none;
+    }
+
+    #pills-supermercado-tab {
+        font-size: 15px;
+    }
+
+    .diferenciais {
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+
+    .tabDif {
+        margin-bottom: 5rem;
+    }
+
+    .bg-11m {
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+
+    .bg-11ma {
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+
+    .bg-12 {
+        display: none;
+    }
+
+    .bg-13 {
+        padding: 1.5rem;
+    }
+
 }
 
 @media (min-width:769px) and (max-width:992px) {
@@ -684,7 +871,7 @@ footer {
     }
 
     #section2Mobile>.row {
-        background: url(./src/img/bg_salmao.png) no-repeat;
+        background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_salmao.png) no-repeat;
         background-size: cover;
         margin-left: unset;
         margin-right: unset;
@@ -718,7 +905,7 @@ footer {
     }
 
     #sc3ColMobile {
-        background: url(./src/img/bg_salmao.png) no-repeat;
+        background: url(https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/bg_salmao.png) no-repeat;
         background-size: cover;
     }
 
@@ -740,18 +927,6 @@ footer {
         margin-right: 1rem;
     }
 
-    .bg-5 {
-        display: none;
-    }
-
-    .bg-6>.row>h3 {
-        font-size: 20px;
-    }
-
-    .bg-6Text>p {
-        font-size: 16px;
-    }
-
     .bg-7,.bg-8,.bg-9,.bg-10 {
         width: 100%;
     }
@@ -763,10 +938,20 @@ footer {
     .bg-16 {
         background-color: #9C4F2F;
     }
+	
+    .bg-12 {
+		width: 100%;
+		padding-top: 3rem;
+	}
+	
+	.list-none {
+		margin-top: unset;
+	}
+	
+	.bg-12>.row>.col-md-6 {
+		width:50%;
+	}
 
-    #section7 {
-        display: none;
-    }
 
     .imgPlantas {
         width: 420px!important;
@@ -776,9 +961,36 @@ footer {
     iframe {
         height: 400px!important;
     }
+
+    .d-none-mb {
+        display: none;
+    }
+
+    .bg-11m, .bg-11ma {
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+
+    .bg-13 {
+        padding: unset;
+    }
+
+    #pills-supermercado-tab {
+        font-size: 16px;
+    }
+
+    .bg-11>img {
+        width: 60%;
+    }
+
 }
 
 @media (min-width:993px) and (max-width:1200px) {
+    #mainRowMobile {
+        display: none;
+    }
+
     #sc3ColMobile {
         display: none;
     }
@@ -790,25 +1002,12 @@ footer {
         display: none;
     }
 
-    #mainRowMobile {
-        display: none;
-    }
-
     #section2Mobile {
         display: none;
     }
 
     .navbar {
-        gap: 2rem;
-    }
-
-    #fachadaSection>img {
-        width: 305px;
-        margin-left: 180px;
-    }
-
-    #mc3 {
-        margin-top: 5.5rem;
+        margin-left: unset;
     }
 
     #orangeBar>.row>div {
@@ -828,10 +1027,6 @@ footer {
         margin-top: -560px!important;
     }
 
-    .bg-5 {
-        background-position-x: -240px;
-    }
-
     .bg-7,.bg-8,.bg-9,.bg-10 {
         width: 100%;
     }
@@ -849,22 +1044,19 @@ footer {
     }
 
     .bg-11>img {
-        width: 100%;
-    }
-    .bg-6Text {
-        font-size: 15px;
+        height: 35%;
     }
 
     .bg-13 {
         padding: 2rem;
     }
 
-    .navbar-nav {
-        margin-right: -255px;
-    }
-
     .navbar-nav>a {
         font-size: 14px;
+    }
+
+    #fachadaSection>img {
+        height: 55vh;
     }
 
     .img-circle {
@@ -881,67 +1073,93 @@ footer {
     .imgPlantas {
         padding-bottom: 2rem;
     }
-}
 
-@media (min-width:1201px) and (max-width:1400px) {
-    #sc3ColMobile {
+    #espec1,#espec2 {
         display: none;
     }
 
-    .imgMobile {
-        display: none;
-    }
-    .bg-15,.bg-16 {
-        display: none;
-    }
-
-    #mainRowMobile {
-        display: none;
+    .espec1lg>h5 {
+        color: #9C4F2F;
+        font-size: 23px;
+        font-family: Quiche, sans-serif;
     }
 
-    #section2Mobile {
-        display: none;
+    .espec1lg>h6 {
+        color: #9C4F2F;
+        font-size: 16px;
+        font-family: Quiche, sans-serif;
     }
 
-    #sc3ColMobile {
-        display: none;
+    .imgPlantas {
+        width: 75%;
     }
 
-    .imgMobile {
-        display: none;
-    }
-    .bg-15,.bg-16 {
-        display: none;
+    .bg-14>.container>h3 {
+        margin-top: 2rem;
     }
 
-    #mainRowMobile {
-        display: none;
-    }
-
-    #section2Mobile {
-        display: none;
+    .navbar-collapse {
+        justify-content: end;
     }
 
     .navbar {
-        gap: 2rem;
+        width: 94%;
+    }
+    #orangeBarHeader {
+        padding-right: 3.5vw;
+        padding-left: 11vw;
+        width: 38%;
+    }
+
+    #orangeBarHeader>p {
+        padding-right: 15px;
+		font-size:12px
+    }
+}
+
+@media (min-width:1201px) and (max-width:1400px) {
+
+    #mc3 {
+        display: none;
+    }
+
+    #mc2 {
+        gap: 4rem;
     }
 
     #fachadaSection>img {
-        width: 305px;
-        margin-left: 180px;
+        width: 34vw;
+        height: 73vh;
     }
 
-    #mc3 {
-        margin-top: 5.5rem;
+    #mainRowMobile {
+        display: none;
     }
 
-    #orangeBar>.row>div {
-        width: 25%;
+    #sc3ColMobile {
+        display: none;
     }
 
-    #mc4Img>img {
-        margin-left: 11vw;
-        width: 390px;
+    .imgMobile {
+        display: none;
+    }
+    .bg-15,.bg-16 {
+        display: none;
+    }
+
+    #section2Mobile {
+        display: none;
+    }
+
+    #sc3ColMobile {
+        display: none;
+    }
+
+    .imgMobile {
+        display: none;
+    }
+    .bg-15,.bg-16 {
+        display: none;
     }
 
     #section2>.row {
@@ -952,9 +1170,6 @@ footer {
         margin-top: -650px!important;
     }
 
-    .bg-5 {
-        background-position-x: -240px;
-    }
 
     .bg-10 {
         order: 3!important;
@@ -962,13 +1177,6 @@ footer {
 
     .list-none>li {
         font-size: 16px;
-    }
-
-    .bg-11>img {
-        width: 100%;
-    }
-    .bg-6Text {
-        font-size: 15px;
     }
 
     .bg-13 {
@@ -997,7 +1205,7 @@ footer {
 
     .bg-8 {
         order: 2!important;
-        background-position-x: -130px;
+        background-position-x: -471px;
     }
 
     .bg-9 {
@@ -1018,6 +1226,7 @@ footer {
 
     .bg-10 {
         order: 4!important;
+		background-position-x: -235px;
     }
 
     .bg-13 {
@@ -1032,9 +1241,44 @@ footer {
         padding-bottom: 2rem;
     }
 
+    .bg-14>.container>h3 {
+        margin-top: 2rem;
+    }
+
+    .navbar-collapse {
+        justify-content: end;
+    }
+
+    .navbar {
+        width: 96%;
+    }
+
+    #orangeBarHeader {
+        padding-right: 1.7vw;
+        padding-left: 14vw;
+        width: 38%;
+    }
+
+    #orangeBarHeader>p {
+        padding-right: 15px;
+    }
+
+
 }
 
 @media (min-width:1401px) and (max-width:1549px) {
+    #mainRowMobile {
+        display: none;
+    }
+
+    #mc3 {
+        display: none;
+    }
+
+    #mc2 {
+        gap: 4rem;
+    }
+
     #sc3ColMobile {
         display: none;
     }
@@ -1043,10 +1287,6 @@ footer {
         display: none;
     }
     .bg-15,.bg-16 {
-        display: none;
-    }
-
-    #mainRowMobile {
         display: none;
     }
 
@@ -1079,6 +1319,7 @@ footer {
 
     .bg-8 {
         order: 2!important;
+		background-position-x: -381px
     }
 
     .bg-9 {
@@ -1099,6 +1340,7 @@ footer {
 
     .bg-10 {
         order: 4!important;
+		background-position-x: -193px;
     }
 
     .bg-13 {
@@ -1113,18 +1355,39 @@ footer {
         padding-bottom: 2rem;
     }
 
-    .bg-5 {
-        background-position-x: -202px;
+    .navbar-collapse {
+        justify-content: end;
     }
 
-    .bg-6Text {
-        font-size: 16px;
+    .navbar {
+        width: 90%;
     }
 
+    #orangeBarHeader {
+        padding-right: 2vw;
+        padding-left: 11vw;
+    }
+
+    #orangeBarHeader>p {
+        padding-right: 15px;
+    }
 
 }
 
 @media (min-width:1550px) {
+
+    .bg-11>img {
+        width: 65%;
+
+    }
+
+    #mc3 {
+        display: none;
+    }
+    #mainRowMobile {
+        display: none;
+    }
+
     #sc3ColMobile {
         display: none;
     }
@@ -1136,16 +1399,8 @@ footer {
         display: none;
     }
 
-    #mainRowMobile {
-        display: none;
-    }
-
     #section2Mobile {
         display: none;
-    }
-
-    .bg-5 {
-        background-position-x: -225px;
     }
 
     .bg-7 {
@@ -1166,6 +1421,7 @@ footer {
 
     .bg-8 {
         order: 2!important;
+		background-position-x: -216px
     }
 
     .bg-9 {
@@ -1186,6 +1442,7 @@ footer {
 
     .bg-10 {
         order: 4!important;
+		background-position-x: -133px;
     }
 
     .bg-13 {
@@ -1196,12 +1453,88 @@ footer {
         order: 2!important;
     }
 
+    .navbar-collapse {
+        justify-content: end;
+    }
+
+    .navbar {
+        width: 91%;
+    }
+
+    #orangeBarHeader {
+        padding-right: 1.7vw;
+        padding-left: 14vw;
+    }
+
+    #orangeBarHeader>p {
+        padding-right: 15px;
+    }
+
 
 }
 
-@media (min-width:1200px) and (max-width:1300px) {
-    .bg-8 {
-        background-position-x: -200px;
+@media (max-width:400px) {
+	.carousel-caption>h5 {
+		font-size: 15px;
+	}
+
+    .carousel-control-next, .carousel-control-prev {
+        bottom: 41px;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 1rem;
+    }
+}
+
+@media (max-width:460px) {
+	.imgPlantas {
+		width:320px!important;
+	}
+
+    .carousel-control-next, .carousel-control-prev {
+        bottom: -4px;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 1.5rem;
+    }
+	
+	.carousel-caption {
+		bottom: -1.7rem;
+	}
+	
+	.locbtn {
+		font-size: 15px!important
+	}
+	
+	.list-none>li {
+		font-size:15px;
+		margin-bottom: 1rem;
+	}
+	
+	.list-none>li>img {
+    width: 35px;
+	}
+	
+	.d-none-xsm {
+		display:none;
+}
+	
+	
+}
+
+@media (min-width:461px) {
+	.d-none-md {
+		display:none;
+	}
+}
+
+@media (max-width:991px) {
+    .navbar-collapse {
+        margin-left: unset;
+    }
+
+    #menuSuperior {
+        display: none;
     }
 }
 

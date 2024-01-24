@@ -7,21 +7,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Aldana Jardim</title>
 </head>
 
 <body>
-    <div class="row" id="mainRow">
-        <div id="main-left" class="col-md-2">
+    <div class="row" id="menuSuperior">
+        <div class="col-lg-2 col-xl-2">
 
         </div>
-        <div id="main-center" class="col-md-7">
-            <div id="mc1">
+        <div class="col-lg-4 col-xl-4">
+            
+        </div>
+        <div class="col-lg-4 col-xl-4" id="orangeBarHeader">
+            <p>Entre em contato: &nbsp;&nbsp; &nbsp; &nbsp; (11) 91705-3110</p>
+        </div>
+        <div class="col-lg-2 col-xl-2">
+            
+        </div>
+    </div>
+    <header id="mainRowMobile">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg py-4">
+                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/logo_aldana.png" width="200px" alt="Logo Aldana Jardim">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a id="menuItem1" class="nav-item nav-link active" href="#section2">Perspectivas</a>
+                        <a id="menuItem2" class="nav-item nav-link" href="#section4">Localização</a>
+                        <a id="menuItem3" class="nav-item nav-link" href="#section5">Diferenciais</a>
+                        <a id="menuItem4" class="nav-item nav-link" href="#section7">Implantação</a>
+                        <a id="menuItem5" class="nav-item nav-link" href="#section8">Plantas</a>
+                        <a id="menuItem6" class="nav-item nav-link" href="#section9">Contato</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="row" id="mainRow">
+        <div id="main-left" class="col-md-1">
+
+        </div>
+        <div id="main-center" class="col-md-10">
+            <div class="container" id="mc1">
                 <nav class="navbar navbar-expand-lg mt-3">
-                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/logo_aldana.png" width="200px" alt="Logo Aldana Jardim">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/logo_aldana.png"
+                        width="200px" alt="Logo Aldana Jardim">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -40,15 +76,16 @@
                 </nav>
             </div>
             <div id="mc2">
-                <section class="col-md-5">
+                <section class="col-md-4 col-xl-5">
                     <h3>
-                        Sofisticação e bem-estar em uma localização privilegiada em torre única e exclusiva no Jardim do
+                        Sofisticação e bem-estar<br> em uma localização privilegiada<br> em torre única e exclusiva no<br> Jardim do
                         Mar - SBC
                     </h3>
                     <h5 class="mt-3">
-                        Cadastre-se abaixo para receber o contato de um especialista!
+                        Cadastre-se abaixo para receber o<br> contato de um especialista!
                     </h5>
-                    <form id="firstForm" class="mt-md-5 mt-3 pb-lg-5" action="enviar.php" method="POST">
+                    <form id="firstForm" class="mt-md-5 mt-3 pb-lg-5"
+                        action="<?php echo get_stylesheet_directory_uri() ?>/enviar.php" method="POST">
                         <div class="form-group">
                             <input type="text" class="form-control" name="nome" placeholder="Nome" required>
                         </div>
@@ -63,70 +100,60 @@
                             <button type="submit" class="btn col-12">Enviar</button>
                         </div>
                     </form>
-                </section>
-                <section id="fachadaSection" class="col-md-5">
-                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/fachada.jpg" alt="Fachada">
-                </section>
-            </div>
-            <div id="mc3">
-                <section id="orangeBar">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <h6>Lançamento</h6>
-                            <p>Torre única</p>
+                    <div class="row" id="espec1">
+                        <div class="col-md-6">
+                            <h5>Lançamento</h5>
+                            <h6>Torre única</h6>
                         </div>
-                        <div class="col-md-2">
-                            <h6>Apartamentos</h6>
-                            <p>59m² e 65m²</p>
+                        <div class="col-md-6">
+                            <h5>2 Dormitórios</h5>
+                            <h6>Com 1 suíte</h6>
                         </div>
-                        <div class="col-md-2">
-                            <h6>2 Dormitórios</h6>
-                            <p>Com 2 suíte</p>
+                    </div>
+                    <div class="row" id="espec2">
+                        <div class="col-md-6">
+                            <h5>Apartamentos</h5>
+                            <h6>59 m2 e 65 m2</h6>
                         </div>
-                        <div class="col-md-2">
-                            <h6>Amplo terraço</h6>
-                            <p>Gourmet</p>
+                        <div class="col-md-6">
+                            <h5>Amplo terraço</h5>
+                            <h6>Gourmet</h6>
                         </div>
                     </div>
                 </section>
+                <section id="fachadaSection" class="col-md-4 col-xl-5">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/fachada.jpg"
+                        alt="Fachada">
+                </section>
+            </div>
+            <div id="mc3">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-6 d-none-mb text-align-center espec1lg">
+                        <h5>Lançamento</h5>
+                        <h6>Torre única</h6><br>
+                        <h5>2 Dormitórios</h5>
+                        <h6>Com 1 suíte</h6>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 d-none-mb text-align-center espec1lg">
+                        <h5>Apartamentos</h5>
+                        <h6>59 m2 e 65 m2</h6><br>
+                        <h5>Amplo terraço</h5>
+                        <h6>Gourmet</h6>
+                    </div>
+                </div>
             </div>
             <div id="mc4" class="mt-5">
-                <section class="col-md-5">
+                <section class="col-md-9">
                     <h3 class="mc4Text">Viva em um cenário exuberante, com cada detalhe cuidadosamente projetado para
                         proporcionar o equilíbrio perfeito entre o agito da cidade e o relaxamento de um verdadeiro
                         refúgio.<br><br><span class="mc4Span">Confira imagens exclusivas:</span></h3>
                 </section>
-                <section id="mc4Img" class="col-md-5">
-                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/grafismo_02.png" alt="Grafismo">
-                </section>
             </div>
         </div>
-        <div id="main-right" class="col-md-3">
-
+        <div id="main-right" class="col-md-1">
+            <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2024/01/grafismo_02-vertical.png" width="100%" alt="Grafismo">
         </div>
     </div>
-
-    <header id="mainRowMobile">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg py-4">
-                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/logo_aldana.png" width="200px" alt="Logo Aldana Jardim">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a id="menuItem1" class="nav-item nav-link active" href="#section2">Perspectivas</a>
-                        <a id="menuItem2" class="nav-item nav-link" href="#section4">Localização</a>
-                        <a id="menuItem3" class="nav-item nav-link" href="#section5">Diferenciais</a>
-                        <a id="menuItem4" class="nav-item nav-link" href="#section7">Implantação</a>
-                        <a id="menuItem5" class="nav-item nav-link" href="#section8">Plantas</a>
-                        <a id="menuItem6" class="nav-item nav-link" href="#section9">Contato</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
 
     <section id="section2">
         <div class="row" style="height: 82vh;">
@@ -146,161 +173,179 @@
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
                         aria-label="Slide 4"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
                         aria-label="Slide 5"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
                         aria-label="Slide 6"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
                         aria-label="Slide 7"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
                         aria-label="Slide 8"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
                         aria-label="Slide 9"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
                         aria-label="Slide 10"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10"
                         aria-label="Slide 11"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11"
                         aria-label="Slide 12"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12"
                         aria-label="Slide 13"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13"
                         aria-label="Slide 14"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14"
                         aria-label="Slide 15"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15"
                         aria-label="Slide 16"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16"
                         aria-label="Slide 17"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="17"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="17"
                         aria-label="Slide 18"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/fitness-scaled.jpg" class="d-block w-100" alt="...">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/fitness-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Fitness</h5>
 
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/psicina-scaled.jpg" class="d-block w-100" alt="...">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/psicina-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Piscina</h5>
+                            <h5>Piscina Adulto</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Area-gourmet-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Area-gourmet-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Área Gourmet</h5>
+                            <h5>Área de Churrasqueira</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Baby-Lounge-1-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Baby-Lounge-1-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Baby Lounge</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Beach-arena-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Beach-arena-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Beach Arena</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Brinquedoteca-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Brinquedoteca-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Brinquedoteca</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Coworking-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Coworking-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Coworking</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Playground-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Playground-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Playground</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Portaria-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Portaria-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Portaria</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Salao-de-Jogos-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Salao-de-Jogos-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Salão de Jogos</h5>
 
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/salao_festas-scaled.jpg" class="d-block w-100" alt="...">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/salao_festas-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Salão de festas</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Churrasqueira-1-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Churrasqueira-1-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Churrasqueira</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Dog-wash-1-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Dog-wash-1-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Dog Wash</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Pet-Place-1-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Pet-Place-1-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Pet Place</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Bicicletario-1-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Bicicletario-1-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Bicicletário</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Hall-2-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Hall-2-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Hall</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Point-drone-1-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Point-drone-1-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Point Drone</h5>
 
                         </div>
                     </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Quadra-1-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Quadra-1-scaled.jpg"
+                            class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Quadra</h5>
+                            <h5>Mini Quadra de Basquete</h5>
 
                         </div>
                     </div>
@@ -322,214 +367,236 @@
     <section id="section2Mobile">
         <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/fachada.jpg" alt="Fachada">
         <div class="container">
-            <h3 class="p-4">Sofisticação e bem-estar em uma localização privilegiada em torre única e exclusiva no Jardim do Mar - SBC</h3>
+            <h3 class="p-4">Sofisticação e bem-estar em uma localização privilegiada em torre única e exclusiva no
+                Jardim do Mar - SBC</h3>
         </div>
 
         <div class="row">
-                <div class="col-6 text-center sm1">
-                    <h5>Lançamento</h5>
-                    <p>Torre Única</p><br>
-                    <h5>Apartamento</h5>
-                    <p>59m² e 65m²</p>
-                </div>
-                <div class="col-6 text-center sm1">
-                    <h5>2 Dormitórios</h5>
-                    <p>Com 1 Suíte</p><br>
-                    <h5>Amplo Terraço</h5>
-                    <p>Gourmet</p>
-                </div>
+            <div class="col-6 text-center sm1">
+                <h5>Lançamento</h5>
+                <p>Torre Única</p><br>
+                <h5>Apartamento</h5>
+                <p>59m² e 65m²</p>
+            </div>
+            <div class="col-6 text-center sm1">
+                <h5>2 Dormitórios</h5>
+                <p>Com 1 Suíte</p><br>
+                <h5>Amplo Terraço</h5>
+                <p>Gourmet</p>
+            </div>
         </div>
 
         <div class="container sm2">
-            <h5 class="p-4">Viva em um cenário exuberante, com cada detalhe cuidadosamente projetado para proporcionar o equilíbrio perfeito entre o agito da cidade e o relaxamento de um verdadeiro refúgio.</h5>
+            <h5 class="p-4">Viva em um cenário exuberante, com cada detalhe cuidadosamente projetado para proporcionar o
+                equilíbrio perfeito entre o agito da cidade e o relaxamento de um verdadeiro refúgio.</h5>
             <h6 class="text-center font-weight-bold pb-4">Confira as imagens exclusivas:</h6>
-            
+
         </div>
-        <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
-                        aria-label="Slide 6"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
-                        aria-label="Slide 7"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
-                        aria-label="Slide 8"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
-                        aria-label="Slide 9"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
-                        aria-label="Slide 10"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10"
-                        aria-label="Slide 11"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11"
-                        aria-label="Slide 12"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12"
-                        aria-label="Slide 13"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13"
-                        aria-label="Slide 14"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14"
-                        aria-label="Slide 15"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15"
-                        aria-label="Slide 16"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16"
-                        aria-label="Slide 17"></button>
-					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="17"
-                        aria-label="Slide 18"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/fitness-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Fitness</h5>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/psicina-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Piscina</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Area-gourmet-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Área Gourmet</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Baby-Lounge-1-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Baby Lounge</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Beach-arena-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Beach Arena</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Brinquedoteca-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Brinquedoteca</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Coworking-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Coworking</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Playground-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Playground</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Portaria-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Portaria</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Salao-de-Jogos-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Salão de Jogos</h5>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/salao_festas-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Salão de festas</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Churrasqueira-1-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Churrasqueira</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Dog-wash-1-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Dog Wash</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Pet-Place-1-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Pet Place</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Bicicletario-1-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Bicicletário</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Hall-2-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Hall</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Point-drone-1-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Point Drone</h5>
-
-                        </div>
-                    </div>
-					<div class="carousel-item">
-                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Quadra-1-scaled.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Quadra</h5>
-
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <div id="carouselExampleCaptions2" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="7"
+                    aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="8"
+                    aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="9"
+                    aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="10"
+                    aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="11"
+                    aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="12"
+                    aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="13"
+                    aria-label="Slide 14"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="14"
+                    aria-label="Slide 15"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="15"
+                    aria-label="Slide 16"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="16"
+                    aria-label="Slide 17"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="17"
+                    aria-label="Slide 18"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/fitness-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Fitness</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/psicina-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Piscina Adulto</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Area-gourmet-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Área de Churrasqueira</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Baby-Lounge-1-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Baby Lounge</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Beach-arena-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Beach Arena</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Brinquedoteca-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Brinquedoteca</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Coworking-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Coworking</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Playground-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Playground</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Portaria-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Portaria</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Salao-de-Jogos-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Salão de Jogos</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/salao_festas-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Salão de festas</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Churrasqueira-1-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Churrasqueira</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Dog-wash-1-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Dog Wash</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Pet-Place-1-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Pet Place</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Bicicletario-1-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Bicicletário</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Hall-2-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Hall</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Point-drone-1-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Point Drone</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/Quadra-1-scaled.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Mini Quadra de Basquete</h5>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </section>
 
     <section id="section3" class="py-5">
         <div class="row">
             <div class="col-md-12 col-lg-4 col-12 pl-5">
                 <div class="container">
-                    <img class="img3" src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/grafismo_03.png" width="350px" alt="Grafismo">
+                    <img class="img3"
+                        src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/grafismo_03.png"
+                        width="350px" alt="Grafismo">
                 </div>
             </div>
             <div id="sc3ColMobile" class=" col-md-1 col-1">
@@ -588,158 +655,174 @@
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-gastronomia" role="tabpanel"
                         aria-labelledby="pills-gastronomia-tab">
-						<div class="row">
-							<div class="col-md-3">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/barcentral-1.jpg" class="img-circle rd" alt="Bar Central">
-								<p class="time-text">
-								Há 4 Minutos
-								</p>
-							</div>
-                        	<div class="col-md-3">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/kennedy.jpg" class="img-circle rd" alt="Padaria Kennedy">
-								<p class="time-text">
-								Há 4 Minutos
-								</p>
-							</div>
-                        	<div class="col-md-3">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/manza.jpeg" class="img-circle rd" alt="Manza Sushi">
-								<p class="time-text">
-								Há 2 Minutos
-								</p>
-							</div>
-                        	<div class="col-md-3">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/tatubola.jpeg" class="img-circle rd" alt="Tatu Bola">
-								<p class="time-text">
-								Há 5 Minutos
-								</p>
-							</div>     
-						</div>		                 
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/barcentral-1.jpg"
+                                    class="img-circle rd" alt="Bar Central">
+                                <p class="time-text">
+                                    Há 4 Minutos
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/kennedy.jpg"
+                                    class="img-circle rd" alt="Padaria Kennedy">
+                                <p class="time-text">
+                                    Há 4 Minutos
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/manza.jpeg"
+                                    class="img-circle rd" alt="Manza Sushi">
+                                <p class="time-text">
+                                    Há 2 Minutos
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/tatubola.jpeg"
+                                    class="img-circle rd" alt="Tatu Bola">
+                                <p class="time-text">
+                                    Há 5 Minutos
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="pills-shopping" role="tabpanel" aria-labelledby="pills-shopping-tab">
-						<div class="row">
-							<div class="col-md-3">
-								
-							</div>  
-							<div class="col-md-3">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/goldensquare-1.png" class="img-circle rd" alt="Golden Shopping">
-								<p class="time-text">
-								Há 4 Minutos
-								</p>
-							</div>
-                        	<div class="col-md-3">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/metropole.jpg" class="img-circle rd" alt="Shopping Metropole">
-								<p class="time-text">
-								Há 5 Minutos
-								</p>
-							</div>
-							<div class="col-md-3">
-								
-							</div>  
-						</div>		                 
+                        <div class="row">
+                            <div class="col-md-3 d-none-mb col-6">
+
+                            </div>
+                            <div class="col-md-6 col-lg-3 col-xl-3 col-6">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/goldensquare-1.png"
+                                    class="img-circle rd" alt="Golden Shopping">
+                                <p class="time-text">
+                                    Há 4 Minutos
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-lg-3 col-xl-3 col-6">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/metropole.jpg"
+                                    class="img-circle rd" alt="Shopping Metropole">
+                                <p class="time-text">
+                                    Há 5 Minutos
+                                </p>
+                            </div>
+                            <div class="col-md-3 d-none-mb col-6">
+
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="pills-educacao" role="tabpanel" aria-labelledby="pills-educacao-tab">
-						<div class="row">
-							<div class="col-md-3">
-								<img src="https://www.direitosbc.br/wp-content/uploads/2023/12/avatae-FDSBC.png"
-                            class="img-circle rd" alt="FDSBC">
-								<p class="time-text">
-								Há 4 Minutos
-								</p>
-							</div>
-                        	<div class="col-md-3">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/metodista1.png" class="img-circle rd" alt="UMESP">
-								<p class="time-text">
-								Há 10 Minutos
-								</p>
-							</div>
-                        	<div class="col-md-3">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/senac-1.jpg" class="img-circle rd" alt="Senac">
-								<p class="time-text">
-								Há 3 Minutos
-								</p>
-							</div>
-                        	<div class="col-md-3">
-								 <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/logo-anhanguera-png_optimized-1024x1024-PhotoRoom.png-PhotoRoom.png" class="img-circle rd" alt="Anhanguera">
-								<p class="time-text">
-								Há 2 Minutos
-								</p>
-							</div>     
-						</div>		                              
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <img src="https://www.direitosbc.br/wp-content/uploads/2023/12/avatae-FDSBC.png"
+                                    class="img-circle rd" alt="FDSBC">
+                                <p class="time-text">
+                                    Há 4 Minutos
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/metodista1.png"
+                                    class="img-circle rd" alt="UMESP">
+                                <p class="time-text">
+                                    Há 10 Minutos
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/senac-1.jpg"
+                                    class="img-circle rd" alt="Senac">
+                                <p class="time-text">
+                                    Há 3 Minutos
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/logo-anhanguera-png_optimized-1024x1024-PhotoRoom.png-PhotoRoom.png"
+                                    class="img-circle rd" alt="Anhanguera">
+                                <p class="time-text">
+                                    Há 2 Minutos
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="pills-lazer" role="tabpanel" aria-labelledby="pills-lazer-tab">
-						<div class="row">
-							<div class="col-md-4">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/191207_Entrega-Parque-da-Juventude-008-Gabriel-Inamine-1-scaled.jpg"
-                            class="img-circle rd" alt="Parque da Juventude">
-								<p class="time-text">
-									<span class="font-weight-bold">Parque da Juventude</span><br>
-								Há 5 Minutos
-								</p>
-							</div>
-                        	<div class="col-md-4">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/crianca-cidade-1.jpg" class="img-circle rd" alt="Cidade da Criança">
-								<p class="time-text">
-									<span class="font-weight-bold">Cidade da criança</span><br>
-								Há 1 Minutos
-								</p>
-							</div>
-                        	<div class="col-md-4">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/raphael-lazurri.jpg" class="img-circle rd" alt="Parque Rapahel Lazzuri">
-								<p class="time-text">
-									<span class="font-weight-bold">Parque Raphael Lazzuri</span><br>
-								Há 5 Minutos
-								</p>
-							</div>
-						</div>		            
+                        <div class="row">
+                            <div class="col-md-4 col-4">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/191207_Entrega-Parque-da-Juventude-008-Gabriel-Inamine-1-scaled.jpg"
+                                    class="img-circle rd" alt="Parque da Juventude">
+                                <p class="time-text">
+                                    <span class="font-weight-bold">Parque da Juventude</span><br>
+                                    Há 5 Minutos
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-4">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/crianca-cidade-1.jpg"
+                                    class="img-circle rd" alt="Cidade da Criança">
+                                <p class="time-text">
+                                    <span class="font-weight-bold">Cidade da criança</span><br>
+                                    Há 1 Minuto
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-4">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/raphael-lazurri.jpg"
+                                    class="img-circle rd" alt="Parque Rapahel Lazzuri">
+                                <p class="time-text">
+                                    <span class="font-weight-bold">Parque Raphael Lazzuri</span><br>
+                                    Há 5 Minutos
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-supermercado" role="tabpanel" aria-labelledby="pills-supermercado-tab">
-						<div class="row">
-							<div class="col-md-3">
-								
-							</div>  
-							<div class="col-md-3">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/sams-club-logo-march-1.png" class="img-circle rd"
-                            alt="Sams Club">
-								<p class="time-text">
-								Há 4 Minutos
-								</p>
-							</div>
-                        	<div class="col-md-3">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/carrefour-logo-0-PhotoRoom.png-PhotoRoom.png" class="img-circle rd" alt="Carrefour">
-								<p class="time-text">
-								Há 4 Minutos
-								</p>
-							</div>
-							<div class="col-md-3">
-								
-							</div>  
-						</div>		                  
+                    <div class="tab-pane fade" id="pills-supermercado" role="tabpanel"
+                        aria-labelledby="pills-supermercado-tab">
+                        <div class="row">
+                            <div class="col-md-3 d-none-mb col-6">
+
+                            </div>
+                            <div class="col-md-6 col-lg-3 col-xl-3 col-6">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/sams-club-logo-march-1.png"
+                                    class="img-circle rd" alt="Sams Club">
+                                <p class="time-text">
+                                    Há 4 Minutos
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-lg-3 col-xl-3 col-6">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/carrefour-logo-0-PhotoRoom.png-PhotoRoom.png"
+                                    class="img-circle rd" alt="Carrefour">
+                                <p class="time-text">
+                                    Há 4 Minutos
+                                </p>
+                            </div>
+                            <div class="col-md-3 d-none-mb col-6">
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-mobilidade" role="tabpanel" aria-labelledby="pills-mobilidade-tab">
-						<div class="row">
-							<div class="col-md-4">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/kennedyav-1.jpg" class="img-circle rd" alt="Avenida Kennedy">
-								<p class="time-text">
-									<span class="font-weight-bold">Avenida Kennedy</span><br>
-								Há 4 Minutos
-								</p>
-							</div>
-                        	<div class="col-md-4">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/rodovia-anchieta-1210x642-2.jpg" class="img-circle rd"
-                            alt="Rodovia Ancheita">
-								<p class="time-text">
-									<span class="font-weight-bold">Rodovia Anchieta</span><br>
-								Há 6 Minutos
-								</p>
-							</div>
-                        	<div class="col-md-4">
-								<img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/vergueiro-1.jpg" class="img-circle rd" alt="Avenia Senador Vergueiro">
-								<p class="time-text">
-									<span class="font-weight-bold">Avenida Senador Vergueiro</span><br>
-								Há 4 Minutos
-								</p>
-							</div>
-						</div>		                    
+                    <div class="tab-pane fade" id="pills-mobilidade" role="tabpanel"
+                        aria-labelledby="pills-mobilidade-tab">
+                        <div class="row">
+                            <div class="col-md-4 col-4">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/kennedyav-1.jpg"
+                                    class="img-circle rd" alt="Avenida Kennedy">
+                                <p class="time-text">
+                                    <span class="font-weight-bold">Avenida Kennedy</span><br>
+                                    Há 4 Minutos
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-4">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/rodovia-anchieta-1210x642-2.jpg"
+                                    class="img-circle rd" alt="Rodovia Ancheita">
+                                <p class="time-text">
+                                    <span class="font-weight-bold">Rodovia Anchieta</span><br>
+                                    Há 6 Minutos
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-4">
+                                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/vergueiro-1.jpg"
+                                    class="img-circle rd" alt="Avenia Senador Vergueiro">
+                                <p class="time-text">
+                                    <span class="font-weight-bold">Avenida Senador Vergueiro</span><br>
+                                    Há 4 Minutos
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -747,131 +830,265 @@
     </section>
 
     <section id="section5">
-        <div class="row">
-            <div class="col-md-3 bg-5">
 
+    </section>
+
+    <section class="d-flex justify-content-center pt-5 pb-5" id="videoSection">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/5JgYuQJ8FOc?si=TfKZXtgVXxHy-p0F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <section id="section5">
+
+    </section>
+
+    <section id="section6">
+        <h3 class="text-align-center">
+            Detalhes que importam
+        </h3><br>
+        <h2 class="text-align-center">Diferenciais</h2>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item plantasItem" role="presentation">
+                <button class="plantasBtn nav-link active" id="pills-apartamentos-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-apartamentos" type="button" role="tab" aria-controls="pills-apartamentos"
+                    aria-selected="true">&nbsp;</button>
+                Apartamentos
+            </li>
+            <li class="nav-item plantasItem" role="presentation">
+                <button class=" plantasBtn nav-link" id="pills-areaComum-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-areaComum" type="button" role="tab" aria-controls="pills-areaComum"
+                    aria-selected="false">&nbsp;</button>
+                Área comum
+            </li>
+            <li class="nav-item plantasItem" role="presentation">
+                <button class=" plantasBtn nav-link" id="pills-construtivos-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-construtivos" type="button" role="tab" aria-controls="pills-construtivos"
+                    aria-selected="false">&nbsp;</button>
+                Construtivos
+            </li>
+        </ul>
+        <div class="tab-content tabDif" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-apartamentos" role="tabpanel"
+                aria-labelledby="pills-apartamentos-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-12 d-flex justify-content-center difpills">
+                            <ul class="diferenciais">
+                                <li>Caixilho em grande parte da
+                                    extensão da parede externa da
+                                    sala;</li>
+                                <li>Varanda entregue com bancada em
+                                    granito, cuba inox e torneira
+                                    instalados;</li>
+                                <li>Guarda-corpo em ferro;</li>
+                                <li>Cozinha entregue com bancada
+                                    em granito, cuba inox e torneira
+                                    instalados;</li>
+                                <li>Varanda gourmet entregue com
+                                    previsão de churrasqueira
+                                    elétrica;</li>
+                                <li>Misturador de água quente na
+                                    cozinha e banheiros;</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-12 d-flex justify-content-center difpills">
+                            <ul class="diferenciais">
+                                <li>Ponto de filtro e lava-louças na
+                                    cozinha;</li>
+                                <li>Infraestrutura seca com
+                                    previsão para instalação de
+                                    aparelhos de ar-condicionado
+                                    na sala e dormitórios.</li>
+                                <li>Pisos, revestimentos, tintas e
+                                    metais de marcas renomadas
+                                    do setor.</li>
+                                <li>Suíte com ventilação natural nos
+                                    banheiros;</li>
+                                <li>Algumas tomadas na
+                                    cozinha e banheiro de 20A
+                                    para atender
+                                    equipamentos necessários;</li>
+                                <li>Janela com persiana integrada nos
+                                    dormitórios, garantindo
+                                    ampla luminosidade e ventilação ao
+                                    ambiente;</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-12 d-flex justify-content-center difpills">
+                            <ul class="diferenciais">
+                                <li>Bacia com caixa acoplada dual flush,
+                                    contribuindo para a economia de água,
+                                    podendo ser acionado o volume de água
+                                    necessário para cada tipo de uso;</li>
+                                <li>Dispositivos economizadores de água:
+                                    torneiras com arejador, contribuindo
+                                    para a redução no consumo de água;</li>
+                                <li>Banheiros entregues com bancada em granito e cuba de louça embutida;</li>
+                                <li>Forro de gesso tabicado no
+                                    banheiro, proporcionando um design moderno;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-12 col-lg-9 bg-6 col-12">
-                <div class="row">
-                    <h3>Diferencias do Apartamento</h3>
-                    <div class="col-md-3 col-12 bg-6Text">
-                        <p>Caixilho de correr em toda extensão da parede externa da sala; Amplo terraço gourmet com
-                            esquadrias de alumínio na porta e previsão de churrasqueira elétrica; Terraço com guarda
-                            corpo em alumínio, com ventilação para previsão e instalação das condensadoras para
-                            ar-condicionado; Bancada da cozinha e do terraço gourmet em granito com cuba de inox;</p>
+            <div class="tab-pane fade" id="pills-areaComum" role="tabpanel" aria-labelledby="pills-areaComum-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-12 d-flex justify-content-center">
+                            <ul class="diferenciais">
+                                <li>Fachada contemporânea
+                                    e ventilada.</li>
+                                <li>Vagas estendidas.</li>
+                                <li>2 Vagas para carro elétrico</li>
+                                <li>Vagas para visitantes.</li>
+                                <li>Iluminação natural no hall de
+                                    elevadores e dos pavimentos
+
+                                    tipo.</li>
+                                <li>Ampla circulação nos
+                                    pavimentos tipo</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-12 d-flex justify-content-center">
+                            <ul class="diferenciais">
+                                <li>Acessibilidade nas áreas
+                                    comuns</li>
+                                <li>Portaria principal e Área
+                                    Delivery separados</li>
+                                <li>Rooftop com piscina e espaço
+                                    gourmet com ampla vista da
+
+                                    cidade</li>
+                                <li>Áreas comuns equipadas,
+                                    mobiliadas e decoradas</li>
+                                <li>Infraestrutura prevista para-
+                                    Wi-Fi em todos os ambientes
+                                    comuns cobertos.</li>
+                                <li>Ar-condicionado entregue em
+                                    todos os ambientes fechados
+                                    da área de lazer.</li>
+                            </ul>
+                        </div>
+
                     </div>
-                    <div class="col-md-3 col-12 bg-6Text">
-                        <p>
-                            Ponto de filtro na cozinha e interfone entregue na cozinha; Misturador de água quente na
-                            cozinha e banheiro; Tomadas da Cozinha e Banheiros de 20A; A cozinha, área de serviço e
-                            terraço são impermeabilizados, permitindo a lavagem do ambiente; Infra seca com previsão
-                            para instalação de aparelhos de ar-condicionado na sala e dormitórios;
-                        </p>
-                    </div>
-                    <div class="col-md-3 col-12 bg-6Text">
-                        <p>
-                            Tomada com entrada USB Tipo C nos dormitórios; Janela com persiana integrada nos
-                            dormitórios; Portas de madeira em pintura esmaltada com tratamento UV; Pisos, revestimentos,
-                            tintas e metais de marcas renomadas do setor; Impermeabilização em toda a área do banheiro
-                            (dentro e fora do box); Tento em granito na área do box para ampliar caimento para o ralo;
-                        </p>
-                    </div>
-                    <div class="col-md-3 col-12 bg-6Text">
-                        <p>Dispositivos economizadores de água: torneiras com arejador; Bacia com caixa acoplada,
-                            contribuindo para a economia de água; Banheiros entregues com ventilação natural ou
-                            exaustor, forro de gesso tabicado, bancada em granito e cuba de louça embutida Dois ralos no
-                            banheiro, um na área do box e outro fora. *Se adquirido no Kit Max, caso contrário, será
-                            entregue apenas a previsão.</p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-construtivos" role="tabpanel" aria-labelledby="pills-construtivos-tab">
+                <div class="container">
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <ul class="diferenciais">
+                            <li>Possibilidade de junção entre unidades (finais 3 e 5).</li>
+                            <li>Possibilidade de integração entre living e sacada.</li>
+                            <li>Validação de apartamento modelo durante a obra.</li>
+                            <li>Estrutura em laje protendida - Usada em ambientes onde se deseja maior vão livre e maior
+                                amplitude (ausência de vigas).</li>
+                            <li>Infraestrutura seca para automação nos apartamentos.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="section6">
-        <div class="row">
-            <div class="bg-7 col-12 order-2">
-                <h3>Diferencias Área Comum</h3>
-				<ul>
-					<li>Estacionamento em nível subsolo e sobressolo.</li>
-					<li> Acessibilidade nas áreas comuns.</li>
-					<li>Rooftop com áreas comuns.</li>
-					<li>Áreas Comuns Equipadas, Mobiliadas e Decoradas com ar-condiciado nos ambientes fechados.</li>
-					<li>Infraestrutura seca para previsão de Wi-Fi em todos os ambientes comuns cobertos.</li>
-				</ul>
+        <div id="diferenciaisImg" class="row">
+            <div class="col-md-4">
+                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/mulher_pet-scaled.jpg"
+                    width="100%" alt="Mulher com Cachorro">
             </div>
-            <div class="bg-8 col-12 order-1">
-                <img class="imgMobile" width="100%" src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/mulher_pet-scaled.jpg" alt="">
+            <div class="col-md-4">
+                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/mulher_crianca-scaled.jpg"
+                    width="100%" alt="Mulher com criança na piscina">
             </div>
-            <div class="bg-9 col-12 order-4">
-                <h3>Diferencias Construtivos</h3>
-				<ul>
-					<li>Laudo de desempenho acústico e projetos de acústica, térmico e lumínico conforme NBR 15575.</li>
-					<li>Validação
-                    de apartamento modelo durante a obra.</li>
-					<li>Projeto de paginação de piso/azulejo validado em obra.</li>
-					<li>Projeto
-                    e especificações de impermeabilização, garantindo utilização do melhor produto em cada ambiente.</li>
-					
-				</ul>
+            <div class="col-md-4">
+                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/maos.jpg" width="100%"
+                    alt="Mãos Dadas">
             </div>
-            <div class="bg-10 col-12 order-5">
-                <img class="imgMobile" width="100%" src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/maos.jpg" alt="">
-            </div>
-            <div class="bg-15 col-12 order-3">
-                <img class="imgMobile" width="100%" src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/mulher_crianca-scaled.jpg" alt="">
-            </div>
-        </div>
-        <div class="bg-16 col-12">
-            &nbsp;
         </div>
     </section>
 
     <section id="section7">
         <div class="row">
-            <div class="col-md-6 bg-11">
-                <h3 class="mb-5">Implementação | Sofisticação em cada detalhe</h3>
-                <img class="mb-5" src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/implantacao_01.png" alt="">
-                <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/implantacao_02.png" alt="">
-            </div>
-            <div class="col-md-6 bg-12">
+            <div class="col-md-12 col-lg-11 col-xl-11 col-sm-12 col-12" id="section7Main">
                 <div class="row">
-                    <div class="col-md-6">
-                        <ul class="list-none">
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/1.png" alt="">Portaria</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/2.png" alt="">Pista de cooper</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/3.png" alt="">Point drone</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/4.png" alt="">Playground</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/5.png" alt="">Brinquedoteca</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/6.png" alt="">Coworking</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/7.png" alt="">Salão de jogos</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/8.png" alt="">Bicicletário</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/9.png" alt="">Pet place e dog wash</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/10.png" alt="">Baby lounge</li>
-                        </ul>
+                    <div class="col-md-12 col-lg-6 col-xl-6 col-12 p-0 bg-11 text-align-center pt-5">
+                        <h3 class="mb-5">Implantação | Sofisticação em cada detalhe</h3>
+                        <img class="mb-5"
+                            src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/implantacao_01.png"
+                            alt="">
+                        <img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/implantacao_02.png"
+                            alt="">
                     </div>
-                    <div class="col-md-6">
-                        <ul class="list-none">
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/11.png" alt="">Fitness</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/12.png" alt="">Salão de festas</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/13.png" alt="">Churrasqueira</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/14.png" alt="">Mini quadra de basquete</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/15.png" alt="">Beach arena</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/16.png" alt="">Área de churrasqueira</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/17.png" alt="">Solário</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/18.png" alt="">Piscina Adulto</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/19.png" alt="">Piscina infantil</li>
-                            <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/20.png" alt="">Deck Molhada</li>
-                        </ul>
+                    <div class="col-md-12 col-lg-6 col-xl-6 col-12 p-0">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-12 bg-11 bg-11m">
+                                <ul class="list-none p-0">
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/1.png"
+                                            alt="">Portaria</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/2.png"
+                                            alt="">Pista de cooper</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/3.png"
+                                            alt="">Point drone</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/4.png"
+                                            alt="">Playground</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/5.png"
+                                            alt="">Brinquedoteca</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/6.png"
+                                            alt="">Coworking</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/7.png"
+                                            alt="">Salão de jogos</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/8.png"
+                                            alt="">Bicicletário</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/9.png"
+                                            alt="">Pet place e dog wash&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/10.png"
+                                            alt="">Baby lounge</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-12 bg-11 bg-11ma">
+                                <ul class="list-none p-0">
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/11.png"
+                                            alt="">Fitness</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/12.png"
+                                            alt="">Salão de festas</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/13.png"
+                                            alt="">Churrasqueira</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/14.png"
+                                            alt="">Mini quadra de basquete</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/15.png"
+                                            alt="">Beach arena</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/16.png"
+                                            alt="">Área de churrasqueira</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/17.png"
+                                            alt="">Solário</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/18.png"
+                                            alt="">Piscina Adulto</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/19.png"
+                                            alt="">Piscina infantil</li>
+                                    <li><img src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/20.png"
+                                            alt="">Deck Molhada</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-1 d-none-mb bg-12">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="section7-8">
+        <div class="row">
+            <div class="col-md-5 col-6 bg-x">
+                <img class="d-none-mb" src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/grafismo_04.png" width="100%" alt="">
+            </div>
+            <div class="col-md-7 col-6 bg-y">
+    
             </div>
         </div>
     </section>
 
     <section id="section8">
         <div class="row">
-            <div class="col-md-12 col-lg-4 col-12 order-2 bg-13">
+            <div class="col-md-12 col-lg-5 col-12 order-2 bg-13">
                 <div class="container">
                     <ul>
                         <li>Endereço: Rua Kara, 140 - Jardim do Mar - SBC</li>
@@ -886,10 +1103,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-8 col-12 order-1 bg-14">
-                <div style="background-color: #9C4F2F;">&nbsp;</div>
+            <div class="col-md-12 col-lg-7 col-12 order-1 bg-14">
                 <div class="container">
                     <h3>Plantas | Sofisticação em cada detalhe</h3>
+                    <h2 class="text-align-center">Plantas tipo</h2>
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item plantasItem" role="presentation">
                             <button class="plantasBtn nav-link active" id="pills-final3e4-tab" data-bs-toggle="pill"
@@ -901,17 +1118,21 @@
                             <button class=" plantasBtn nav-link" id="pills-final1e2-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-final1e2" type="button" role="tab" aria-controls="pills-final1e2"
                                 aria-selected="false">&nbsp;</button>
-                            Final 1,2,3 e 6
+                            Final 1, 2, 3 e 6
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-final3e4" role="tabpanel"
                             aria-labelledby="pills-final3e4-tab">
-                            <img class="imgPlantas" src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/planta_01.png" width="600px" alt="Plantas">
+                            <img class="imgPlantas"
+                                src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/planta_01.png"
+                                width="600px" alt="Plantas">
                         </div>
                         <div class="tab-pane fade" id="pills-final1e2" role="tabpanel"
                             aria-labelledby="pills-final1e2-tab">
-                            <img class="imgPlantas" src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/01_-_copia_17-removebg-preview.png" width="600px" alt="Planta">
+                            <img class="imgPlantas"
+                                src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/01_-_copia_17-removebg-preview.png"
+                                width="600px" alt="Planta">
 
                         </div>
                     </div>
@@ -932,7 +1153,8 @@
                 <div id="sc8Right" class="container d-grid p-5 text-center">
                     <h3>Não perca condições de lançamento!</h3>
                     <h4>Faça seu cadastro agora mesmo para conhecer mais sobre o Aldana Jardim</h4>
-                    <form id="firstForm" class="mt-md-5 mt-3 pb-lg-5" action="enviar.php" method="POST">
+                    <form id="firstForm" class="mt-md-5 mt-3 pb-lg-5"
+                        action="<?php echo get_stylesheet_directory_uri() ?>/enviar.php" method="POST">
                         <div class="form-group">
                             <input type="text" class="form-control" name="nome" placeholder="Nome" required>
                         </div>
@@ -949,26 +1171,23 @@
                     </form>
 
                     <h3>Construção e incorporação:</h3>
-                    <img class="img-fluid" src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/logo_maximo_aldana.png" width="100%" alt="Maximo Aldana">
+                    <img class="img-fluid"
+                        src="https://dev.residencialaldanajardim.com.br/wp-content/uploads/2023/12/logo_maximo_aldana.png"
+                        width="100%" alt="Maximo Aldana">
                 </div>
             </div>
         </div>
     </section>
-
     <footer>
         <div class="container text-center p-5">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus voluptates fugit, ea esse delectus libero
-            magni quis, quia aspernatur a sint distinctio repellendus sapiente doloribus ipsa odit, harum iusto non.
+            Alvará de Construção nº 836/2023 no processo nº 78299/2022 pelo Município de São Bernardo do Campo/SP. Registro do Memorial de Incorporação R.2 na matrícula nº 172.729 do 1° Registro de Imóveis de SBC/SP, na data de 10/01/2024. Construção: Maximo Aldana Construtora e Incorporadora Ltda, CNPJ 03.326.625/0001-36. Incorporação: Residencial Aldana Jardim SPE Ltda, CNPJ 45.162.910/0001-09. Comercialização: Quantum Partners Intermediação Imobiliária Ltda, CNPJ: 49.433.651/0001-64, CRECI 042766-J e LPS São Paulo Consultoria de Imóveis Ltda CNPJ: 15.673.605/0003-82 CRECI 19585-J.
         </div>
     </footer>
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
